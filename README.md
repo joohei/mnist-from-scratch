@@ -1,5 +1,5 @@
 # mnist-from-scratch
-Creating a neural network from scratch to solve the MNIST dataset. The MNIST dataset consists of 70000 hand-written digits. My goal is to achieve an efficient solution that can recognize digits with at least a 98% accuracy.
+Creating a neural network from scratch to solve the MNIST dataset. The MNIST dataset consists of 70000 handwritten digits. My goal is to achieve an efficient solution that can recognize digits with at least a 98% accuracy.
 
 ## Creating a Neural Network to Classify the MNIST Dataset
 
@@ -9,7 +9,7 @@ To use this code, you will need to install the following libraries:
 
 - numpy
 - scipy
-- matplotlib
+- matplotlib (optional, you need it to display augmented images)
 - cupy
 - torch
 - keras
@@ -117,3 +117,8 @@ print(f"Accuracy: {accuracy:.2%}")
 ### Results
 
 With the above steps, you should be able to achieve an accuracy of at least 98% on the MNIST dataset.
+
+### Additional notes
+
+- If you don't have cuda or rocm available please check the other branch in this repository which uses plain numpy instead of cupy. Please note that this makes the training process much slower.
+- You can specify a `verbose` argument on the `network.train()` function. If set to `True`, the training process will be logged using Tensorboard. You can initialize Tensorboard using the command line. `tensorboard --logdir logs` You can then see the logs at http://localhost:6006
