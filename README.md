@@ -110,7 +110,7 @@ network.save("mnist_network.pkl")
 network = nn.Network.load("mnist_network.pkl")
 
 # Evaluate the network on the test set
-accuracy = network.evaluate(test_set)
+accuracy = network.accuracy(test_set)
 print(f"Accuracy: {accuracy:.2%}")
 ```
 
