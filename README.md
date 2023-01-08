@@ -123,7 +123,12 @@ With the above steps, you should be able to achieve an accuracy of at least 98% 
 ### Additional notes
 
 #### Logging
-- You can specify a `verbose` argument on the `network.train()` function.
-- If set to `True`, the training process will be logged using Tensorboard.
-- You can initialize Tensorboard using the command line: `tensorboard --logdir logs`.
-- You can then see the logs at http://localhost:6006.
+
+By default the `Network.train` method logs the networks accuracy and loss with tensorboard. To view these logs during training you must first initialize tensorboard. To do this, you can follow these steps:
+
+1. Use the command line interface to initialize tensorboard: `tensorboard --logdir logs`
+2. Open your browser
+3. Go to this url: http://localhost:6006
+
+NOTE:
+You can also disable tensorboard logging by passing `verbose=False` into the `Network.train` method.
