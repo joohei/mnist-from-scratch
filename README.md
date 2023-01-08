@@ -59,7 +59,7 @@ from keras.utils import to_categorical
 # Reshape the data to the correct format
 x_train = np.reshape(x_train, (-1, 784, 1)) / 255.0  # Making the images a flattened 1D array and normalizing the rgb values to range [0, 1]
 y_train = np.reshape(to_categorical(y_train, 10), (-1, 10, 1))  # One-Hot encoding the labels for the images
-x_test = np.reshape(x_test, (-1, 784, 1)) / 255.0  # Making the images a flattened 1D array and normalizing the rgb values
+x_test = np.reshape(x_test, (-1, 784, 1)) / 255.0  # Making the images a flattened 1D array and normalizing the rgb values to range [0, 1]
 y_test = np.reshape(to_categorical(y_test, 10), (-1, 10, 1))  # One-Hot encoding the labels for the images
 ```
 
