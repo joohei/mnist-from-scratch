@@ -120,5 +120,11 @@ With the above steps, you should be able to achieve an accuracy of at least 98% 
 
 ### Additional notes
 
-- If you don't have cuda or rocm available please check the other branch in this repository which uses plain numpy instead of cupy. Please note that this makes the training process much slower.
-- You can specify a `verbose` argument on the `network.train()` function. If set to `True`, the training process will be logged using Tensorboard. You can initialize Tensorboard using the command line: `tensorboard --logdir logs`, you can then see the logs at http://localhost:6006.
+#### CuPy
+If you don't have cuda or rocm available please check the other branch in this repository which uses plain numpy instead of cupy. Please note that this makes the training process much slower.
+
+#### Logging
+- You can specify a `verbose` argument on the `network.train()` function.
+- If set to `True`, the training process will be logged using Tensorboard.
+- You can initialize Tensorboard using the command line: `tensorboard --logdir logs`.
+- You can then see the logs at http://localhost:6006.
