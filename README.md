@@ -132,3 +132,7 @@ By default the `Network.train` method logs the networks accuracy and loss with t
 
 NOTE:
 You can also disable tensorboard logging by passing `verbose=False` into the `Network.train` method.
+
+#### Accuracy
+
+Calculating the network's accuracy with the `Network.accuracy` method only works if the outputs are one-hot encoded. Also it only works for multi-class classification networks. If you use this for example XOR, you're gonna have to ignore the accuracy. The `Network.loss` works always.
