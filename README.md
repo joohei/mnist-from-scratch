@@ -10,13 +10,12 @@ To use this code, you will need to install the following libraries:
 - numpy
 - scipy
 - matplotlib (optional, you need it to display augmented images)
-- cupy
 - torch
 - keras
 
 You can install these libraries using pip:
 
-`pip install numpy scipy matplotlib cupy torch keras`
+`pip install numpy scipy matplotlib torch keras`
 
 ### Using the Code
 
@@ -119,9 +118,6 @@ print(f"Accuracy: {accuracy:.2%}")
 With the above steps, you should be able to achieve an accuracy of at least 98% on the MNIST dataset.
 
 ### Additional notes
-
-#### CuPy
-If you don't have cuda or rocm available please check the other branch in this repository which uses plain numpy instead of cupy. Please note that this makes the training process much slower.
 
 #### Logging
 - You can specify a `verbose` argument on the `network.train()` function.
