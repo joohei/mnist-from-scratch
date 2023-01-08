@@ -135,4 +135,4 @@ You can also disable tensorboard logging by passing `verbose=False` into the `Ne
 
 #### Accuracy
 
-Calculating the network's accuracy with the `Network.accuracy` method only works if the outputs are one-hot encoded. Also it only works for multi-class classification networks. If you use this for example XOR, you're gonna have to ignore the accuracy. The `Network.loss` works always.
+Calculating the network's accuracy with the `Network.accuracy` method only works if the outputs are one-hot encoded.
