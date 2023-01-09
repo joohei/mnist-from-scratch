@@ -13,10 +13,12 @@ To use this code, you will need to install the following libraries:
 - cupy
 - torch
 - keras
+- tensorboard
+- tensorflow (optional, additional features for tensorboard)
 
 You can install these libraries using pip:
 
-`pip install numpy scipy matplotlib cupy torch keras`
+`pip install numpy scipy matplotlib cupy torch keras tensorflow tensorboard`
 
 ### Using the Code
 
